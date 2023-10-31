@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: #000;
+    }
+    .preguntas, h1, p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #validar{
+        background-color: #000;
+    }
+</style>
+<body>
+    <div class="preguntas">
+        <label for="">¿Cuando finalizó la 2da guerra mundial?</label>
+        <input type="hidden" value= "d" id="resCorrect">
+        <label for="press"><input type="radio" value="a" name="resUser" id="press">1995</label>
+        <label for="press"><input type="radio" value="b" name="resUser" id="press">1965</label>
+        <label for="press"><input type="radio" value="c" name="resUser" id="press">1985</label>
+        <label for="press"><input type="radio" value="d" name="resUser" id="press">1945</label>
+
+    </div>
+    <div class="preguntas">
+        <label for="">¿Cuando se proclamo la independencia del Perú?</label>
+        <input type="hidden" value= "c" id="resCorrect2">
+        <label for="press"><input type="radio" value="a" name="resUser2" id="press">1862</label>
+        <label for="press"><input type="radio" value="b" name="resUser2" id="press">1845</label>
+        <label for="press"><input type="radio" value="c" name="resUser2" id="press">1821</label>
+        <label for="press"><input type="radio" value="d" name="resUser2" id="press">1845</label>
+
+    </div>
+    <div class="preguntas">
+        <label for="">¿Quién creo la teoria de la relatividad?</label>
+        <input type="hidden" value= "a" id="resCorrect3">
+        <label for="press"><input type="radio" value="a" name="resUser3" id="press">Albert Einstien</label>
+        <label for="press"><input type="radio" value="b" name="resUser3" id="press">Issac Newton</label>
+        <label for="press"><input type="radio" value="c" name="resUser3" id="press">Stephen Hawking</label>
+        <label for="press"><input type="radio" value="d" name="resUser3" id="press">Nikla Tessla</label>
+
+    </div>
+    <div class="preguntas">
+        <label for="">¿Quién fue el lider de los alemanes en la 2da guerra mundial?</label>
+        <input type="hidden" value= "d" id="resCorrect4">
+        <label for="press"><input type="radio" value="a" name="resUser4" id="press">José Stalin</label>
+        <label for="press"><input type="radio" value="b" name="resUser4" id="press">Benito Mussolini</label>
+        <label for="press"><input type="radio" value="c" name="resUser4" id="press">Franklin D. Roosevelt</label>
+        <label for="press"><input type="radio" value="d" name="resUser4" id="press">Adolf Hitler</label>
+    </div>
+
+
+    <!-- <button >Validar</button> -->
+    <button type="button" id="validar" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Validar</button>
+
+    <div id="nota">
+        <h1>Acá ira la nora obtenida</h1>
+        <p id="resFinal">00</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

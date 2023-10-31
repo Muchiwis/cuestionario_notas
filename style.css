@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reloj{
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 0, 255, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+.reloj span{
+    font-size: 60px;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.reloj span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#minutos::after{ content: 'Minutos';}#segundos::after{ content: 'Segundos'}
